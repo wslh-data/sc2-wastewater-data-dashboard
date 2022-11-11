@@ -1,4 +1,3 @@
-
 FROM rocker/shiny-verse:4.1.0
 
 LABEL base.image="rocker/shiny-verse"
@@ -8,11 +7,8 @@ LABEL software.version="4.1.0"
 LABEL description="R Shiny Server for hosting Data Dashboards"
 LABEL website=""
 LABEL license=""
-LABEL maintainer="Kelsey Florek"
-LABEL maintainer.email="kelsey.florek@slh.wisc.edu"
+LABEL maintainer="Adelaide Roguet <adelaide.roguet@slh.wisc.edu>"
 
-# prevents having to enter commands during apt-get install
-ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
   build-essential \
@@ -33,34 +29,23 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
   libharfbuzz-dev \
   libfribidi-dev
 
-# install R packages
 RUN R -e "install.packages(c(\
 'shiny', \
-'shinycssloaders', \
+'dplyr', \
 'plotly', \
+'forcats', \ 
+'ggplot2', \ 
 'leaflet', \
 'leaflet.minicharts', \
-'dplyr', \
-'tidyr', \
-'geojsonio', \
-'sf', \
-'RAthena', \
-'lubridate', \
-'htmltools' \
+'viridis' \
 ), repos = 'http://cran.us.r-project.org')"
 
-RUN wget "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -O "awscliv2.zip" && unzip awscliv2.zip && sudo ./aws/install && rm awscliv2.zip
-
-ENV CONDA_DIR /home/shiny/conda
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && /bin/bash ~/miniconda.sh -b -p $CONDA_DIR
-ENV PATH=$CONDA_DIR/bin:$PATH
-RUN conda init && pip install boto3
 
 RUN rm -r /srv/shiny-server/*
 
-# copy app into container
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
-COPY example /srv/shiny-server/example
+COPY wwProp /srv/shiny-server/wwProp
+COPY wwPrev /srv/shiny-server/wwPrev
+COPY wwMap /srv/shiny-server/wwMap
 
 EXPOSE 3838
-
