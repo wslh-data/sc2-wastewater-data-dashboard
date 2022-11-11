@@ -44,8 +44,8 @@ RUN R -e "install.packages(c(\
 RUN rm -r /srv/shiny-server/*
 
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
-COPY wwProp /srv/shiny-server/wwProp
-COPY wwPrev /srv/shiny-server/wwPrev
+COPY wwProportion /srv/shiny-server/wwProportion
+COPY wwPredominance /srv/shiny-server/wwPredominance
 COPY wwMap /srv/shiny-server/wwMap
 
 EXPOSE 3838
