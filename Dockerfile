@@ -47,5 +47,7 @@ COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 COPY wwProportion /srv/shiny-server/wwProportion
 COPY wwPredominance /srv/shiny-server/wwPredominance
 COPY wwMap /srv/shiny-server/wwMap
+COPY wwTime /srv/shiny-server/wwTime
+
 
 EXPOSE 3838
