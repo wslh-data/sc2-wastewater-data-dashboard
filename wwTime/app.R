@@ -1,4 +1,5 @@
 library(shiny)
+library(dplyr)
 
 file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
 
