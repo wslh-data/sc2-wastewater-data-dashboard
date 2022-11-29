@@ -3,17 +3,30 @@ library(leaflet)
 library(leaflet.minicharts)
 library(dplyr)
 library(forcats)
-'%!in%' <- function(x,y)!('%in%'(x,y)) 
 
 
-file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
+# starting data
+freyja.map <- NULL
+colors.plot.map <- NULL
+freyja.1st.occurence <-NULL
 
 
-Cols<-c("All variants",
-        names(freyja.map)[which(names(freyja.map) %!in% c("sites", "Date", "lat", "long", "Week", "Month"))])
+#data fetch and light processing function
+getData <- function(){
+  file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
+  load(url(file_url))
+  selectionChoices <<- c("All variants", names(freyja.map  %>% select(-sites, -lat, -long, -Month)))
+  freyja.map <<- freyja.map
+  colors.plot.map <<- colors.plot.map
+  freyja.1st.occurence <<- freyja.1st.occurence
+}
 
-basemap <- leaflet(width = "100%",  height = "100%") %>%
-  addProviderTiles(providers$CartoDB.Positron)
+
+basemap <- leaflet(width = "100%",  height = "100%", options = leafletOptions(zoomControl=TRUE, minZoom=7, maxZoom=9)) %>%
+  addProviderTiles(providers$CartoDB.Positron)  %>%
+  setView(lng=-89.9941,lat=44.6243, zoom=7) %>%
+  fitBounds(-92.7, 42.56, -87.7, 46.8) %>%      #fitBounds(min(freyja.map$long), min(freyja.map$lat), max(freyja.map$long), max(freyja.map$lat))
+  setMaxBounds(-93.2, 42.06, -87.2, 47.3)    #setMaxBounds(min(freyja.map$long) - 0.5, min(freyja.map$lat) - 0.5, max(freyja.map$long) + 0.5, max(freyja.map$lat) + 0.5)
 
 
 
@@ -22,22 +35,25 @@ ui <- fluidPage(
   leafletOutput("map", height=600),
   tags$style(type = "text/css", "html, body {width:100%; height: 100%}"),
   absolutePanel(top = 10, right = "10%",
-                selectInput("variant", "Select a group of variants:", Cols, multiple = FALSE, selected = "All variants")
+                selectizeInput("variant", "Select a group of variants:", choices="All variants", multiple = FALSE)
   )
   
 )
 
 
+
 server <- function(input, output, session){
   
-  
+  # Refresh the data daily     
   reactiveGetData <- reactive({
-    load(url(file_url))
+    getData()
   }) %>% bindCache(format(Sys.time(),"%Y-%m-%d"))
   
-  
+
   # Initialize map
   output$map <- renderLeaflet({
+    reactiveGetData()
+    updateSelectizeInput(session, "variant", choices=selectionChoices, server=TRUE, selected = "All variants")
     basemap %>%
       addMinicharts(
         freyja.map$long, freyja.map$lat,
@@ -49,11 +65,18 @@ server <- function(input, output, session){
   
   # Update charts each time input value changes
   observe({
-    if (input$variant == "All variants") {
-      data <- freyja.map[, names(freyja.map)[which(names(freyja.map) %!in% c("sites", "Date", "lat", "long", "Week", "Month"))]]
+
+    inc_lineages <- input$variant
+    
+    if (inc_lineages == "All variants") {
+      data <- freyja.map  %>% select(-sites, -lat, -long, -Month)
+      date.init<-max(freyja.map$Month)
     } else {
-      data <- freyja.map[, input$variant]
+      data <- freyja.map %>% select(inc_lineages) 
+      date.init<-freyja.1st.occurence %>% filter(Lineage == inc_lineages) %>% select(Date)
+      date.init<-date.init[1, 1]
     }
+    
     maxValue <- max(as.matrix(data))
     
     leafletProxy("map", session) %>%
@@ -64,10 +87,10 @@ server <- function(input, output, session){
         maxValues = maxValue,
         timeFormat = "%b %Y",
         legendPosition = "bottomleft",
-        initialTime = max(freyja.map$Month),
+        initialTime = date.init,
         time = freyja.map$Month,
         transitionTime = 900,
-        type = ifelse(input$variant == "All variants", "pie", "polar-radius"),
+        type = ifelse(inc_lineages == "All variants", "pie", "polar-radius"),
         showLabels = input$labels
       )
   })
