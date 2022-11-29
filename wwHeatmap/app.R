@@ -5,12 +5,26 @@ library(plotly)
 library(forcats)
 library(viridis)
 
-file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
+
+# starting data
+freyja.heatmap <- NULL
+colors.plot.heatmap <- NULL
+
+
+#data fetch and light processing function
+getData <- function(){
+  file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
+  load(url(file_url))
+  selectionChoices<<-levels(fct_relevel(unique(freyja.heatmap$predominance), "Predominant variants"))
+  freyja.heatmap <<- freyja.heatmap
+  colors.plot.heatmap <<-colors.plot.heatmap
+}
+
 
 
 ui <- fluidPage(
   
-  selectInput("choice", "Select a group of variants:", choices = levels(fct_relevel(unique(freyja.heatmap$predominance), "Predominant variants")), multiple = FALSE, selected =  "Predominant variants"),
+  selectizeInput("choice", "Select a group of variants:", choices = "Predominant variants", multiple = FALSE),
   radioButtons(inputId = "display",
                label = "Cities sorted by:",
                choices = c("alphabetical order", "population size"),
@@ -24,20 +38,28 @@ ui <- fluidPage(
 
 server <- function(input, output, session){
   
-  
+  # Refresh the data daily
   reactiveGetData <- reactive({
-    load(url(file_url))
-  }) %>% bindCache(format(Sys.time(),"%Y-%m-%d"))
+    getData()
+  }) %>% bindCache(format(Sys.time(),"%Y-%m-%d %H:%M"))
+  
+  
+  # Refresh the items in menu
+  observe({
+    reactiveGetData()
+    updateSelectizeInput(session, "choice", choices=selectionChoices, server=TRUE, selected = "Predominant variants")
+  })
   
   
   output$graph <- renderPlotly({
+ 
+    reactiveGetData()
     
     if (input$choice == "Predominant variants") {
       
       ggplotly(
         
         ggplot() +
-          
           
           {if(input$display == "alphabetical order")
             geom_tile(data = freyja.heatmap %>%
@@ -70,7 +92,6 @@ server <- function(input, output, session){
         
         ggplot() +
           
-          
           {if(input$display == "alphabetical order")
             geom_tile(data = freyja.heatmap %>%
                         filter(predominance == input$choice) %>%
@@ -96,16 +117,10 @@ server <- function(input, output, session){
         
         layout(autosize=FALSE)
     }
-    
-    
-    
-    
+
   })
-  
-  
+ 
 }
-
-
 
 
 shinyApp(ui, server)
