@@ -34,7 +34,7 @@ server <- function(input, output, session){
   # Refresh the data daily
   reactiveGetData <- reactive({
     getData()
-  }) %>% bindCache(format(Sys.time(),"%Y-%m-%d %H:%M"))
+  }) %>% bindCache(format(Sys.time(),"%Y-%m-%d"))
   
   # Refresh items in the menu
   observe({
