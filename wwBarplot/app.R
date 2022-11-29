@@ -2,28 +2,51 @@ library(shiny)
 library(dplyr)
 library(plotly)
 
-file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
+
+# starting data
+freyja.barplot <- NULL
+colors.plot.barplot <- NULL
+TimeStamp <- NULL
+
+
+#data fetch and light processing function
+getData <- function(){
+  file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
+  load(url(file_url))
+  selectionChoices<<-unique(as.factor(freyja.barplot$City))
+  freyja.barplot <<- freyja.barplot
+  colors.plot.barplot <<-colors.plot.barplot
+}
+
 
 
 
 ui <- fluidPage(
   
-  selectInput("choice", "Select a city:", choices = sort(unique(freyja.barplot$City)), multiple = FALSE, selected = "All cities combined"),
+  selectizeInput("choice", "Select a city:", choices = "All cities combined", multiple = FALSE),
   plotlyOutput("graph")
+  
 )
 
 
 server <- function(input, output, session){
   
-  
-  
+  # Refresh the data daily
   reactiveGetData <- reactive({
-    load(url(file_url))
-  }) %>% bindCache(format(Sys.time(),"%Y-%m-%d"))
+    getData()
+  }) %>% bindCache(format(Sys.time(),"%Y-%m-%d %H:%M"))
+  
+  # Refresh items in the menu
+  observe({
+    reactiveGetData()
+    updateSelectizeInput(session, "choice", choices=selectionChoices, server=TRUE, selected = "All cities combined")
+  })
   
   
   output$graph <- renderPlotly({
     
+    reactiveGetData()
+
     plot_ly(freyja.barplot %>% filter(City == input$choice),
             x = ~Date,
             y = ~proportion,
