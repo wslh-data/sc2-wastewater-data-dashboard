@@ -8,7 +8,7 @@ TimeStamp <- NULL
 
 #data fetch and light processing function
 getData <- function(){
-  file_url <- "https://github.com/AnehEf/dev_repo/blob/main/DashboardData.RData?raw=true"
+  file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
   load(url(file_url))
   TimeStamp <<- TimeStamp
 }
