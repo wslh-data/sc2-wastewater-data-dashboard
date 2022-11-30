@@ -2,7 +2,6 @@ library(shiny)
 library(leaflet)
 library(leaflet.minicharts)
 library(dplyr)
-library(forcats)
 
 
 # starting data
@@ -72,9 +71,9 @@ server <- function(input, output, session){
       data <- freyja.map  %>% select(-sites, -lat, -long, -Month)
       date.init<-max(freyja.map$Month)
     } else {
-      data <- freyja.map %>% select(inc_lineages) 
+      data <- freyja.map %>% select(any_of(inc_lineages)) 
       date.init<-freyja.1st.occurence %>% filter(Lineage == inc_lineages) %>% select(Date)
-      date.init<-date.init[1, 1]
+      #date.init<-date.init[1, 1]
     }
     
     maxValue <- max(as.matrix(data))
