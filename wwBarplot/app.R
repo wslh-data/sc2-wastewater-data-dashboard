@@ -13,7 +13,7 @@ TimeStamp <- NULL
 getData <- function(){
   file_url <- "http://github.com/wslh-data/sc2-wastewater-data-dashboard/blob/main/data/DashboardData.RData?raw=true"
   load(url(file_url))
-  selectionChoices<<-unique(as.factor(freyja.barplot$City))
+  selectionChoices<<-sort(unique(as.factor(freyja.barplot$City)))
   freyja.barplot <<- freyja.barplot
   colors.plot.barplot <<-colors.plot.barplot
 }
