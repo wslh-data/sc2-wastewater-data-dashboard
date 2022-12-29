@@ -2,7 +2,7 @@ library(shiny)
 library(leaflet)
 library(leaflet.minicharts)
 library(dplyr)
-
+library(shinycssloaders)
 
 # starting data
 freyja.map <- NULL
@@ -31,7 +31,7 @@ basemap <- leaflet(width = "100%",  height = "100%", options = leafletOptions(zo
 
 ui <- fluidPage(
 
-  leafletOutput("map", height=600),
+  leafletOutput("map", height=600) %>% withSpinner(color="#c5050c"),
   tags$style(type = "text/css", "html, body {width:100%; height: 100%}"),
   absolutePanel(top = 10, right = "10%",
                 selectizeInput("variant", "Select a group of variants:", choices="All variants", multiple = FALSE)
