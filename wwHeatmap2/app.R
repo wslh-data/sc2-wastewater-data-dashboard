@@ -86,10 +86,13 @@ server <- function(input, output, session){
                             ygap = 0.5,
                             colorscale = color_scale,
                             colorbar = list(tickmode='array',
-                                            title = "Group of Variants",
+                                            title = "Groups of Variants",
+                                            outlinewidth = 0,
                                             tickvals=c(1:length(colors.plot.heatmap)),
+                                            ticklen = 6,
                                             ticktext=sort(levels(factor(x = lineage.color$Lineage)), decreasing=TRUE),
-                                            len=0.5),
+                                            len=0.5,
+                                            tickfont = list(size = 0.7)),
                             text = ~tooltip,
                             hoverinfo ="text"
         ) %>% 
