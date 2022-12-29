@@ -37,7 +37,8 @@ RUN R -e "install.packages(c(\
 'ggplot2', \ 
 'leaflet', \
 'leaflet.minicharts', \
-'viridis' \
+'viridis', \
+'shinycssloaders' \
 ), repos = 'http://cran.us.r-project.org')"
 
 
