@@ -4,6 +4,7 @@ library(ggplot2)
 library(plotly)
 library(forcats)
 library(viridis)
+library(shinycssloaders)
 
 
 # starting data
@@ -30,7 +31,7 @@ ui <- fluidPage(
                choices = c("alphabetical order", "population size"),
                selected = "alphabetical order"),
   
-  plotlyOutput("graph")
+  withSpinner(plotlyOutput("graph"), color="#c5050c") 
   
 )
 
