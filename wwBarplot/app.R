@@ -1,7 +1,7 @@
 library(shiny)
 library(dplyr)
 library(plotly)
-
+library(shinycssloaders)
 
 # starting data
 freyja.barplot <- NULL
@@ -24,7 +24,7 @@ getData <- function(){
 ui <- fluidPage(
   
   selectizeInput("choice", "Select a city:", choices = "All cities combined", multiple = FALSE),
-  plotlyOutput("graph")
+  withSpinner(plotlyOutput("graph"), color="#c5050c") 
   
 )
 
