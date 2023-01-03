@@ -86,7 +86,7 @@ server <- function(input, output, session){
                             ygap = 0.5,
                             colorscale = color_scale,
                             colorbar = list(tickmode='array',
-                                            title = "Groups of Variants",
+                                            title = "Groups of variants",
                                             outlinewidth = 0,
                                             tickvals=c(1:length(colors.plot.heatmap)),
                                             ticklen = 6,
