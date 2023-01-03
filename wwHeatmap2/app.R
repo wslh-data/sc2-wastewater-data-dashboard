@@ -132,6 +132,7 @@ server <- function(input, output, session){
           layout(plot_bgcolor='white', 
                  autosize=FALSE,
                  xaxis = list(title = "",
+                              tickangle = -45,
                               tickformat = '%b %Y',
                               tickfont = list(size = 10),
                               dtick = "M1"),
