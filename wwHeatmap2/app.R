@@ -104,6 +104,7 @@ server <- function(input, output, session){
                             tickformat = '%b %Y',
                             dtick = "M1"),
                yaxis = list(title = "", 
+                            tickfont = list(size = 10),
                             dtick = "1"))
       
     } 
@@ -132,8 +133,10 @@ server <- function(input, output, session){
                  autosize=FALSE,
                  xaxis = list(title = "",
                               tickformat = '%b %Y',
+                              tickfont = list(size = 10),
                               dtick = "M1"),
                  yaxis = list(title = "", 
+                              tickfont = list(size = 10),
                               dtick = "1"))
       }
   }) 
