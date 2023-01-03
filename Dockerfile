@@ -47,7 +47,6 @@ RUN rm -r /srv/shiny-server/*
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 COPY wwBarplot /srv/shiny-server/wwBarplot
 COPY wwHeatmap /srv/shiny-server/wwHeatmap
-COPY wwHeatmap2 /srv/shiny-server/wwHeatmap2
 COPY wwMap /srv/shiny-server/wwMap
 COPY wwTime /srv/shiny-server/wwTime
 
