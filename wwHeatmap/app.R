@@ -30,7 +30,7 @@ ui <- fluidPage(
                choices = c("alphabetical order", "population size"),
                selected = "alphabetical order"),
   
-  withSpinner(plotlyOutput("graph"), color="#c5050c") 
+  withSpinner(plotlyOutput("graph", height='100%', width='100%'), color="#c5050c") 
 
 )
 
@@ -102,7 +102,10 @@ server <- function(input, output, session){
                             tickangle = -45,
                             tickfont = list(size = 10),
                             tickformat = '%b %Y',
-                            dtick = "M1"),
+                            dtick = "M1",
+                            rangeslider = list(thickness = 0.08, type = "date"),
+                            range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(365), "%Y-%m-%d"),
+                                      format(max(freyja.heatmap.subset$Date) , "%Y-%m-%d"))),
                yaxis = list(title = "", 
                             tickfont = list(size = 10),
                             dtick = "1"))
@@ -135,7 +138,10 @@ server <- function(input, output, session){
                               tickangle = -45,
                               tickformat = '%b %Y',
                               tickfont = list(size = 10),
-                              dtick = "M1"),
+                              dtick = "M1",
+                              rangeslider = list(thickness = 0.08, type = "date"),
+                              range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(365), "%Y-%m-%d"),
+                                        format(max(freyja.heatmap.subset$Date) , "%Y-%m-%d"))),
                  yaxis = list(title = "", 
                               tickfont = list(size = 10),
                               dtick = "1"))
