@@ -61,7 +61,7 @@ plot_ly(freyja.barplot %>% filter(City == input$choice) %>% mutate(Y = case_when
       
       layout(barmode = "stack",
              xaxis = list(title = ''),
-             yaxis = list(title = ~ifelse(input$choice_display == "100% (default)", 'Proportion of variants (%)', 'Proportion of variants normalized by the <b>amount of\nSARS-CoV-2 in wastewater</b> (gene copies/person/day)')),
+             yaxis = list(title = ~ifelse(input$choice_display == "100% (default)", 'Proportion of variants (%)', 'Proportion of variants normalized to the <b>amount of\nSARS-CoV-2 in wastewater</b> (gene copies/person/day)')),
              legend = list(title=list(text='<b> Groups of variants </b>')),
              clickmode = "none")
   })
