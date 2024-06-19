@@ -24,7 +24,7 @@ getData <- function(){
 ui <- fluidPage(
   
   selectizeInput("choice", "Select a city:", choices = "All cities combined", multiple = FALSE),
-  radioButtons('choice_display', "Porportion of variants normalized to:", choices = c("100% (default)", "SARS-CoV-2 wastewater level"), inline = TRUE),
+  radioButtons('choice_display', "Proportion of variants normalized to:", choices = c("100% (default)", "SARS-CoV-2 wastewater level"), inline = TRUE),
   withSpinner(plotlyOutput("graph", height='100%'), color="#c5050c") 
   
 )
