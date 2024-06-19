@@ -37,7 +37,7 @@ server <- function(input, output, session) {
     
     output$UpdateTime <- renderText({
       reactiveGetData()
-      format(TimeStamp)
+      format(as.Date(TimeStamp, format="%Y-%m-%d"), "%b %d, %Y")
     })
 }
 
