@@ -36,6 +36,7 @@ ui <- fluidPage(
 
 
 
+
 server <- function(input, output, session){
   
   # Refresh the data daily
@@ -78,7 +79,7 @@ server <- function(input, output, session){
       freyja.heatmap.subset<-left_join(freyja.heatmap.subset, lineage.color, by="Lineage")
       
       # Plot
-      plot_ly(data = freyja.heatmap.subset, reversescale = T) %>%
+      plot_ly(data = freyja.heatmap.subset, reversescale = T, height = 600) %>%
         plotly::add_heatmap(x = ~(Date), 
                             y = ~sites,
                             z = ~num.lineage,
@@ -90,14 +91,15 @@ server <- function(input, output, session){
                                             outlinewidth = 0,
                                             tickvals=c(1:length(colors.plot.heatmap)),
                                             ticklen = 6,
+                                            #size = 30,
                                             ticktext=sort(levels(factor(x = lineage.color$Lineage)), decreasing=TRUE),
-                                            len=0.5,
+                                            len=1, #0.5,
                                             tickfont = list(size = 0.7)),
                             text = ~tooltip,
                             hoverinfo ="text"
         ) %>% 
         layout(plot_bgcolor='white', 
-               autosize=FALSE,
+               autosize=TRUE,
                xaxis = list(title = "",
                             tickangle = -45,
                             tickfont = list(size = 10),
@@ -119,7 +121,7 @@ server <- function(input, output, session){
               sites, 
               if(input$display == "population size"){-desc(PopulationServed)}else{desc(sites)}))
         
-        plot_ly(data = freyja.heatmap.subset, reversescale = T) %>%
+        plot_ly(data = freyja.heatmap.subset, reversescale = T, height = 600) %>%
           plotly::add_heatmap(x = ~(Date), 
                               y = ~sites,
                               z = ~`Relative abundance (%)`,
@@ -133,7 +135,7 @@ server <- function(input, output, session){
                               hoverinfo ="text"
           ) %>% 
           layout(plot_bgcolor='white', 
-                 autosize=FALSE,
+                 autosize=TRUE,
                  xaxis = list(title = "",
                               tickangle = -45,
                               tickformat = '%b %Y',
