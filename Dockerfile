@@ -49,6 +49,7 @@ COPY wwBarplot /srv/shiny-server/wwBarplot
 COPY wwHeatmap /srv/shiny-server/wwHeatmap
 COPY wwMap /srv/shiny-server/wwMap
 COPY wwTime /srv/shiny-server/wwTime
+COPY wwBanner /srv/shiny-server/wwBanner
 
 
 EXPOSE 3838
