@@ -71,11 +71,8 @@ server <- function(input, output, session){
             if(input$display == "population size"){-desc(PopulationServed)}else{desc(sites)}))
       
       # Convert lineages into numeric variable
-      lineage.color<-as.data.frame(1:length(colors.plot.heatmap))
-      names(lineage.color)<-"num.lineage"
-      lineage.color$Lineage<-sort(levels(factor(x = freyja.heatmap.subset$Lineage,
-                                                levels = unique(freyja.heatmap.subset$Lineage))), 
-                                  decreasing = TRUE)
+      lineage.color<-data.frame(num.lineage = 1:length(colors.plot.heatmap),
+                                Lineage = unique(freyja.heatmap.subset$Lineage))
       freyja.heatmap.subset<-left_join(freyja.heatmap.subset, lineage.color, by="Lineage")
       
       # Plot
@@ -121,19 +118,23 @@ server <- function(input, output, session){
               sites, 
               if(input$display == "population size"){-desc(PopulationServed)}else{desc(sites)}))
         
-        plot_ly(data = freyja.heatmap.subset, reversescale = T, height = 600) %>%
-          plotly::add_heatmap(x = ~(Date), 
-                              y = ~sites,
-                              z = ~`Relative abundance (%)`,
-                              xgap = 0.5,
-                              ygap = 0.5,
-                              text = ~tooltip,
-                              colorbar = list(tickmode='array',
-                                              title = "Relative abundance (%)",
-                                              cmin = 0,
-                                              cmax = 100),
-                              hoverinfo ="text"
-          ) %>% 
+        plot_ly(data = freyja.heatmap.subset, height = 600) %>%
+          plotly::add_trace(freyja.heatmap.subset,
+                            type = 'heatmap', 
+                            reversescale = T,
+                            x = ~Date, 
+                            y = ~sites,
+                            z = ~`Relative abundance (%)`,
+                            xgap = 0.5,
+                            ygap = 0.5,
+                            text = ~tooltip,
+                            hoverinfo ="text"
+                            ) %>%
+          colorbar(title = "Relative abundance (%)",
+                   cmin = 0,
+                   cmax = 100,
+                   limits = c(0, 100)
+                   ) %>% 
           layout(plot_bgcolor='white', 
                  autosize=TRUE,
                  xaxis = list(title = "",
