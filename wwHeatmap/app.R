@@ -104,8 +104,8 @@ server <- function(input, output, session){
                             tickformat = '%b %Y',
                             dtick = "M1",
                             rangeslider = list(thickness = 0.08, type = "date"),
-                            range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(365), "%Y-%m-%d"),
-                                      format(max(freyja.heatmap.subset$Date) , "%Y-%m-%d"))),
+                            range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(400), "%Y-%m-%d"),
+                                      format(max(freyja.heatmap.subset$Date) + lubridate::days(7), "%Y-%m-%d"))),
                yaxis = list(title = "", 
                             tickfont = list(size = 10),
                             dtick = "1"))
@@ -144,8 +144,8 @@ server <- function(input, output, session){
                               tickfont = list(size = 10),
                               dtick = "M1",
                               rangeslider = list(thickness = 0.08, type = "date"),
-                              range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(365), "%Y-%m-%d"),
-                                        format(max(freyja.heatmap.subset$Date) , "%Y-%m-%d"))),
+                              range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(400), "%Y-%m-%d"),
+                                        format(max(freyja.heatmap.subset$Date) + lubridate::days(7), "%Y-%m-%d"))),
                  yaxis = list(title = "", 
                               tickfont = list(size = 10),
                               dtick = "1"))
