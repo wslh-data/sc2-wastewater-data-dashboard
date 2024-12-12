@@ -71,11 +71,8 @@ server <- function(input, output, session){
             if(input$display == "population size"){-desc(PopulationServed)}else{desc(sites)}))
       
       # Convert lineages into numeric variable
-      lineage.color<-as.data.frame(1:length(colors.plot.heatmap))
-      names(lineage.color)<-"num.lineage"
-      lineage.color$Lineage<-sort(levels(factor(x = freyja.heatmap.subset$Lineage,
-                                                levels = unique(freyja.heatmap.subset$Lineage))), 
-                                  decreasing = TRUE)
+      lineage.color<-data.frame(num.lineage = 1:length(colors.plot.heatmap),
+                                Lineage = unique(freyja.heatmap.subset$Lineage))
       freyja.heatmap.subset<-left_join(freyja.heatmap.subset, lineage.color, by="Lineage")
       
       # Plot
@@ -92,7 +89,8 @@ server <- function(input, output, session){
                                             tickvals=c(1:length(colors.plot.heatmap)),
                                             ticklen = 6,
                                             #size = 30,
-                                            ticktext=sort(levels(factor(x = lineage.color$Lineage)), decreasing=TRUE),
+                                            #ticktext=sort(levels(factor(x = lineage.color$Lineage)), decreasing=TRUE),
+                                            ticktext=~unique(Lineage),
                                             len=1, #0.5,
                                             tickfont = list(size = 0.7)),
                             text = ~tooltip,
@@ -106,8 +104,8 @@ server <- function(input, output, session){
                             tickformat = '%b %Y',
                             dtick = "M1",
                             rangeslider = list(thickness = 0.08, type = "date"),
-                            range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(365), "%Y-%m-%d"),
-                                      format(max(freyja.heatmap.subset$Date) , "%Y-%m-%d"))),
+                            range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(400), "%Y-%m-%d"),
+                                      format(max(freyja.heatmap.subset$Date) + lubridate::days(7), "%Y-%m-%d"))),
                yaxis = list(title = "", 
                             tickfont = list(size = 10),
                             dtick = "1"))
@@ -121,19 +119,23 @@ server <- function(input, output, session){
               sites, 
               if(input$display == "population size"){-desc(PopulationServed)}else{desc(sites)}))
         
-        plot_ly(data = freyja.heatmap.subset, reversescale = T, height = 600) %>%
-          plotly::add_heatmap(x = ~(Date), 
-                              y = ~sites,
-                              z = ~`Relative abundance (%)`,
-                              xgap = 0.5,
-                              ygap = 0.5,
-                              text = ~tooltip,
-                              colorbar = list(tickmode='array',
-                                              title = "Relative abundance (%)",
-                                              cmin = 0,
-                                              cmax = 100),
-                              hoverinfo ="text"
-          ) %>% 
+        plot_ly(data = freyja.heatmap.subset, height = 600) %>%
+          plotly::add_trace(freyja.heatmap.subset,
+                            type = 'heatmap', 
+                            reversescale = T,
+                            x = ~Date, 
+                            y = ~sites,
+                            z = ~`Relative abundance (%)`,
+                            xgap = 0.5,
+                            ygap = 0.5,
+                            text = ~tooltip,
+                            hoverinfo ="text"
+                            ) %>%
+          colorbar(title = "Relative abundance (%)",
+                   cmin = 0,
+                   cmax = 100,
+                   limits = c(0, 100)
+                   ) %>% 
           layout(plot_bgcolor='white', 
                  autosize=TRUE,
                  xaxis = list(title = "",
@@ -142,8 +144,8 @@ server <- function(input, output, session){
                               tickfont = list(size = 10),
                               dtick = "M1",
                               rangeslider = list(thickness = 0.08, type = "date"),
-                              range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(365), "%Y-%m-%d"),
-                                        format(max(freyja.heatmap.subset$Date) , "%Y-%m-%d"))),
+                              range = c(format(max(freyja.heatmap.subset$Date) - lubridate::days(400), "%Y-%m-%d"),
+                                        format(max(freyja.heatmap.subset$Date) + lubridate::days(7), "%Y-%m-%d"))),
                  yaxis = list(title = "", 
                               tickfont = list(size = 10),
                               dtick = "1"))
