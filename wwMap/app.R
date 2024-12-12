@@ -25,7 +25,7 @@ basemap <- leaflet(width = "100%",  height = "100%", options = leafletOptions(zo
   addProviderTiles(providers$CartoDB.Positron)  %>%
   setView(lng=-89.9941,lat=44.6243, zoom=7) %>%
   fitBounds(-92.7, 42.56, -87.7, 46.8) %>%      #fitBounds(min(freyja.map$long), min(freyja.map$lat), max(freyja.map$long), max(freyja.map$lat))
-  setMaxBounds(-93.2, 42.06, -87.2, 47.3)    #setMaxBounds(min(freyja.map$long) - 0.5, min(freyja.map$lat) - 0.5, max(freyja.map$long) + 0.5, max(freyja.map$lat) + 0.5)
+  setMaxBounds(-95.2, 40.06, -84.2, 49.3)    #setMaxBounds(min(freyja.map$long) - 2, min(freyja.map$lat) - 2, max(freyja.map$long) + 2, max(freyja.map$lat) + 2)
 
 
 
