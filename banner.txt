@@ -1,1 +1,2 @@
+ℹ️  <b>Note</b> Low levels of SARS-CoV-2 in wastewater cause fewer samples to qualify for sequencing analysis (a certain amount of viruses are needed to obtain good-quality data). Thus, we have to hold the sequencing analysis until we have enough samples to allow cost-effective processing, delaying the dashboard update. Thanks for your patience.
 
