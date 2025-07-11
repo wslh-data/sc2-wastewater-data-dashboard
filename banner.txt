@@ -1,4 +1,2 @@
-Join us for the Wastewater-Based Epidemiology Public Forum on July 9th! This event will feature presentations from national and local experts discussing how sewage can play a role in protecting public health. Whether you attend in person or online, you will have the opportunity to ask questions and engage in the conversation. For more information or to register, click here: https://www.slh.wisc.edu/wastewater-based-epidemiology-public-forum-july-9-2025/
-
-ℹ️  Note: Low levels of SARS-CoV-2 in wastewater cause fewer samples to qualify for sequencing analysis (a certain amount of viruses are needed to obtain good-quality data). Thus, we have to hold the sequencing analysis until we have enough samples to allow cost-effective processing, delaying the dashboard update. Thanks for your patience.
+ℹ️  Note: Low levels of SARS-CoV-2 in wastewater cause fewer samples to qualify for sequencing analysis (a certain amount of viruses is needed to obtain good-quality data). Thus, we have to hold the sequencing analysis until we have enough samples to allow cost-effective processing, delaying the dashboard update. Thanks for your patience.
 
