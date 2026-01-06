@@ -1,2 +1,2 @@
-ℹ️  Note: Low levels of SARS-CoV-2 in wastewater cause fewer samples to qualify for sequencing analysis (a certain amount of viruses is needed to obtain good-quality data). Thus, we have to hold the sequencing analysis until we have enough samples to allow cost-effective processing, delaying the dashboard update. Thanks for your patience.
+ℹ️  New variants are now visible, including MC.10.2.1, PY.1, NW.1.2, XFC, XFJ, and BA.3.2 (Cicada). BA.3.2 has been classified by the WHO as Variant Under Monitoring since December 5th, 2025.
 
