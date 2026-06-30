@@ -1,130 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="d3-component" viewBox="-70 0 1830 1950" style="font-family: sans-serif; font-size: 1.25rem;" width="2000" height="2000"><path fill="none" stroke="#ccc" stroke-width="3px" d="M 150 1601.7857142857144
-              C 75 1601.7857142857144,
-                75 1648.2142857142858,
-                0 1648.2142857142858"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 150 1694.642857142857
-              C 75 1694.642857142857,
-                75 1648.2142857142858,
-                0 1648.2142857142858"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 300 1508.9285714285716
-              C 225 1508.9285714285716,
-                225 1601.7857142857144,
-                150 1601.7857142857144"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 300 1601.7857142857144
-              C 225 1601.7857142857144,
-                225 1601.7857142857144,
-                150 1601.7857142857144"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 300 1694.642857142857
-              C 225 1694.642857142857,
-                225 1601.7857142857144,
-                150 1601.7857142857144"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 450 1416.0714285714287
-              C 375 1416.0714285714287,
-                375 1508.9285714285716,
-                300 1508.9285714285716"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 450 1508.9285714285716
-              C 375 1508.9285714285716,
-                375 1508.9285714285716,
-                300 1508.9285714285716"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 450 1601.7857142857144
-              C 375 1601.7857142857144,
-                375 1508.9285714285716,
-                300 1508.9285714285716"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 975
-              C 525 975,
-                525 1416.0714285714287,
-                450 1416.0714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1067.857142857143
-              C 525 1067.857142857143,
-                525 1416.0714285714287,
-                450 1416.0714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1416.0714285714287
-              C 525 1416.0714285714287,
-                525 1416.0714285714287,
-                450 1416.0714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1764.2857142857144
-              C 525 1764.2857142857144,
-                525 1416.0714285714287,
-                450 1416.0714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1857.1428571428573
-              C 525 1857.1428571428573,
-                525 1416.0714285714287,
-                450 1416.0714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 557.1428571428571
-              C 675 557.1428571428571,
-                675 1067.857142857143,
-                600 1067.857142857143"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 835.7142857142858
-              C 675 835.7142857142858,
-                675 1067.857142857143,
-                600 1067.857142857143"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1253.5714285714287
-              C 675 1253.5714285714287,
-                675 1067.857142857143,
-                600 1067.857142857143"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1416.0714285714287
-              C 675 1416.0714285714287,
-                675 1067.857142857143,
-                600 1067.857142857143"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1578.5714285714287
-              C 675 1578.5714285714287,
-                675 1067.857142857143,
-                600 1067.857142857143"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1764.2857142857144
-              C 675 1764.2857142857144,
-                675 1764.2857142857144,
-                600 1764.2857142857144"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 557.1428571428571
-              C 825 557.1428571428571,
-                825 557.1428571428571,
-                750 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 835.7142857142858
-              C 825 835.7142857142858,
-                825 835.7142857142858,
-                750 835.7142857142858"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1114.2857142857142
-              C 825 1114.2857142857142,
-                825 1253.5714285714287,
-                750 1253.5714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1207.142857142857
-              C 825 1207.142857142857,
-                825 1253.5714285714287,
-                750 1253.5714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1300
-              C 825 1300,
-                825 1253.5714285714287,
-                750 1253.5714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1392.857142857143
-              C 825 1392.857142857143,
-                825 1253.5714285714287,
-                750 1253.5714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1578.5714285714287
-              C 825 1578.5714285714287,
-                825 1578.5714285714287,
-                750 1578.5714285714287"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 185.71428571428572
-              C 975 185.71428571428572,
-                975 557.1428571428571,
-                900 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 464.28571428571433
-              C 975 464.28571428571433,
-                975 557.1428571428571,
-                900 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 557.1428571428571
-              C 975 557.1428571428571,
-                975 557.1428571428571,
-                900 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 650
-              C 975 650,
-                975 557.1428571428571,
-                900 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 742.8571428571429
-              C 975 742.8571428571429,
-                975 557.1428571428571,
-                900 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 835.7142857142858
-              C 975 835.7142857142858,
-                975 557.1428571428571,
-                900 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 928.5714285714287
-              C 975 928.5714285714287,
-                975 557.1428571428571,
-                900 557.1428571428571"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 1114.2857142857142
-              C 975 1114.2857142857142,
-                975 1114.2857142857142,
-                900 1114.2857142857142"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 1300
-              C 975 1300,
-                975 1300,
-                900 1300"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 92.85714285714286
-              C 1125 92.85714285714286,
-                1125 185.71428571428572,
-                1050 185.71428571428572"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 185.71428571428572
-              C 1125 185.71428571428572,
-                1125 185.71428571428572,
-                1050 185.71428571428572"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 278.57142857142856
-              C 1125 278.57142857142856,
-                1125 185.71428571428572,
-                1050 185.71428571428572"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 464.28571428571433
-              C 1125 464.28571428571433,
-                1125 464.28571428571433,
-                1050 464.28571428571433"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 650
-              C 1125 650,
-                1125 650,
-                1050 650"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 1300
-              C 1125 1300,
-                1125 1300,
-                1050 1300"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1350 92.85714285714286
-              C 1275 92.85714285714286,
-                1275 92.85714285714286,
-                1200 92.85714285714286"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1500 92.85714285714286
-              C 1425 92.85714285714286,
-                1425 92.85714285714286,
-                1350 92.85714285714286"></path><g transform="translate(50,50)"></g><g class="node" transform="translate(0, 1648.2142333984375)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(215, 215, 215); stroke: rgb(186, 186, 186);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">19A (B)</text></g><g class="node" transform="translate(150, 1601.7857666015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(198, 198, 198); stroke: rgb(171, 171, 171);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">20A (B.1)</text></g><g class="node" transform="translate(150, 1694.642822265625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(137, 137, 137); stroke: rgb(119, 119, 119);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700"></text></g><g class="node" transform="translate(300, 1508.9285888671875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(189, 189, 189); stroke: rgb(164, 164, 164);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">20B (B.1.1)</text></g><g class="node" transform="translate(300, 1601.7857666015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(69, 64, 212); stroke: rgb(60, 56, 183);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">21A (Delta, B.1.617.2)</text></g><g class="node" transform="translate(300, 1694.642822265625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(137, 137, 137); stroke: rgb(119, 119, 119);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700"></text></g><g class="node" transform="translate(450, 1416.0714111328125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(135, 198, 127); stroke: rgb(117, 171, 110);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">21M (Omicron, B.1.1.529)</text></g><g class="node" transform="translate(450, 1508.9285888671875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(84, 35, 186); stroke: rgb(73, 31, 161);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">20I (Alpha, B.1.1.7)</text></g><g class="node" transform="translate(450, 1601.7857666015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(137, 137, 137); stroke: rgb(119, 119, 119);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700"></text></g><g class="node" transform="translate(600, 975)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(114, 190, 154); stroke: rgb(99, 165, 133);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">21K (Omicron, BA.1)</text></g><g class="node" transform="translate(600, 1067.857177734375)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(125, 194, 140); stroke: rgb(108, 169, 121);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">21L (Omicron, BA.2)</text></g><g class="node" transform="translate(600, 1416.0714111328125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(147, 201, 115); stroke: rgb(128, 174, 100);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">22A (BA.4)</text></g><g class="node" transform="translate(600, 1764.2857666015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(159, 203, 104); stroke: rgb(138, 176, 90);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">22B (BA.5)</text></g><g class="node" transform="translate(600, 1857.142822265625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(237, 255, 0); stroke: rgb(206, 237, 0);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25I (BA.3.2)</text></g><g class="node" transform="translate(750, 557.1428833007812)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(242, 85, 45); stroke: rgb(210, 74, 39);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23I (BA.2.86)</text></g><g class="node" transform="translate(750, 835.7142944335938)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(184, 203, 87); stroke: rgb(159, 176, 75);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">22D (BA.2.75)</text></g><g class="node" transform="translate(750, 1253.5714111328125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(208, 200, 75); stroke: rgb(181, 173, 65);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">22F (XBB)</text></g><g class="node" transform="translate(750, 1416.0714111328125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(208, 200, 75); stroke: rgb(181, 173, 65);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">22C (BA.2.12.1)</text></g><g class="node" transform="translate(750, 1578.5714111328125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(172, 204, 96); stroke: rgb(149, 177, 83);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24D (XDV)</text></g><g class="node" transform="translate(750, 1764.2857666015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(197, 203, 81); stroke: rgb(170, 176, 70);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">22E (BQ.1)</text></g><g class="node" transform="translate(900, 557.1428833007812)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(238, 64, 41); stroke: rgb(207, 56, 35);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24A (JN.1)</text></g><g class="node" transform="translate(900, 835.7142944335938)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(237, 183, 64); stroke: rgb(206, 158, 56);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23C (CH.1.1)</text></g><g class="node" transform="translate(900, 1114.2857666015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(219, 197, 71); stroke: rgb(190, 170, 61);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23A (XBB.1.5)</text></g><g class="node" transform="translate(900, 1207.142822265625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(229, 190, 68); stroke: rgb(198, 165, 59);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23B (XBB.1.16)</text></g><g class="node" transform="translate(900, 1300)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(242, 171, 62); stroke: rgb(210, 148, 54);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23D (XBB.1.9)</text></g><g class="node" transform="translate(900, 1392.857177734375)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(247, 160, 59); stroke: rgb(214, 139, 51);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23E (XBB.2.3)</text></g><g class="node" transform="translate(900, 1578.5714111328125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(223, 184, 60); stroke: rgb(194, 159, 52);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25B (NB.1.8.1)</text></g><g class="node" transform="translate(1050, 185.7142791748047)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(235, 43, 38); stroke: rgb(204, 37, 33);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24B (JN.1.11.1)</text></g><g class="node" transform="translate(1050, 464.28570556640625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 59, 52); stroke: rgb(227, 51, 45);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24H (LF.7)</text></g><g class="node" transform="translate(1050, 557.1428833007812)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 72, 67); stroke: rgb(231, 62, 58);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">24I (MV.1)</text></g><g class="node" transform="translate(1050, 650)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 99, 92); stroke: rgb(231, 86, 80);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">25A (LP.8.1)</text></g><g class="node" transform="translate(1050, 742.8571166992188)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 131, 120); stroke: rgb(237, 114, 104);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25C (XFG)</text></g><g class="node" transform="translate(1050, 835.7142944335938)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 183, 175); stroke: rgb(237, 158, 152);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25G (XFC)</text></g><g class="node" transform="translate(1050, 928.5714111328125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 221, 216); stroke: rgb(237, 192, 187);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25I (XFJ)</text></g><g class="node" transform="translate(1050, 1114.2857666015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(242, 85, 45); stroke: rgb(210, 74, 39);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23G (XBB.1.5.70)</text></g><g class="node" transform="translate(1050, 1300)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(247, 143, 56); stroke: rgb(214, 124, 48);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23F (EG.5.1)</text></g><g class="node" transform="translate(1200, 92.85713958740234)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(175, 42, 10); stroke: rgb(152, 36, 8);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24C (KP.3)</text></g><g class="node" transform="translate(1200, 185.7142791748047)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(203, 55, 31); stroke: rgb(176, 47, 27);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">24F (XEC)</text></g><g class="node" transform="translate(1200, 278.5714416503906)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(220, 66, 50); stroke: rgb(191, 57, 44);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">24G (KP.2.3)</text></g><g class="node" transform="translate(1200, 464.28570556640625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(241, 93, 79); stroke: rgb(209, 81, 69);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25E (PY.1)</text></g><g class="node" transform="translate(1200, 650)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 132, 119); stroke: rgb(225, 115, 103);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25F (NW.1.2)</text></g><g class="node" transform="translate(1200, 1300)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(245, 106, 49); stroke: rgb(212, 92, 43);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23H (HK.3)</text></g><g class="node" transform="translate(1350, 92.85713958740234)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(162, 39, 21); stroke: rgb(141, 34, 19);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24E (KP.3.1.1)</text></g><g class="node" transform="translate(1500, 92.85713958740234)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(83, 10, 12); stroke: rgb(72, 8, 10);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25D (MC.10.2.1)</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="d3-component" viewBox="-70 0 1830 1950" style="font-family: sans-serif; font-size: 1.25rem;" width="2000" height="2000"><path fill="none" stroke="#ccc" stroke-width="3px" d="M 150 1606.534090909091
+              C 75 1606.534090909091,
+                75 1650.8522727272727,
+                0 1650.8522727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 150 1695.1704545454547
+              C 75 1695.1704545454547,
+                75 1650.8522727272727,
+                0 1650.8522727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 300 1517.8977272727273
+              C 225 1517.8977272727273,
+                225 1606.534090909091,
+                150 1606.534090909091"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 300 1606.534090909091
+              C 225 1606.534090909091,
+                225 1606.534090909091,
+                150 1606.534090909091"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 300 1695.1704545454547
+              C 225 1695.1704545454547,
+                225 1606.534090909091,
+                150 1606.534090909091"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 450 1429.2613636363637
+              C 375 1429.2613636363637,
+                375 1517.8977272727273,
+                300 1517.8977272727273"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 450 1517.8977272727273
+              C 375 1517.8977272727273,
+                375 1517.8977272727273,
+                300 1517.8977272727273"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 450 1606.534090909091
+              C 375 1606.534090909091,
+                375 1517.8977272727273,
+                300 1517.8977272727273"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 997.159090909091
+              C 525 997.159090909091,
+                525 1429.2613636363637,
+                450 1429.2613636363637"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1085.7954545454545
+              C 525 1085.7954545454545,
+                525 1429.2613636363637,
+                450 1429.2613636363637"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1429.2613636363637
+              C 525 1429.2613636363637,
+                525 1429.2613636363637,
+                450 1429.2613636363637"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1772.7272727272727
+              C 525 1772.7272727272727,
+                525 1429.2613636363637,
+                450 1429.2613636363637"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 600 1861.3636363636365
+              C 525 1861.3636363636365,
+                525 1429.2613636363637,
+                450 1429.2613636363637"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 576.1363636363636
+              C 675 576.1363636363636,
+                675 1085.7954545454545,
+                600 1085.7954545454545"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 864.2045454545455
+              C 675 864.2045454545455,
+                675 1085.7954545454545,
+                600 1085.7954545454545"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1285.2272727272727
+              C 675 1285.2272727272727,
+                675 1085.7954545454545,
+                600 1085.7954545454545"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1440.3409090909092
+              C 675 1440.3409090909092,
+                675 1085.7954545454545,
+                600 1085.7954545454545"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1595.4545454545455
+              C 675 1595.4545454545455,
+                675 1085.7954545454545,
+                600 1085.7954545454545"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 750 1772.7272727272727
+              C 675 1772.7272727272727,
+                675 1772.7272727272727,
+                600 1772.7272727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 576.1363636363636
+              C 825 576.1363636363636,
+                825 576.1363636363636,
+                750 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 864.2045454545455
+              C 825 864.2045454545455,
+                825 864.2045454545455,
+                750 864.2045454545455"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1152.2727272727273
+              C 825 1152.2727272727273,
+                825 1285.2272727272727,
+                750 1285.2272727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1240.909090909091
+              C 825 1240.909090909091,
+                825 1285.2272727272727,
+                750 1285.2272727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1329.5454545454545
+              C 825 1329.5454545454545,
+                825 1285.2272727272727,
+                750 1285.2272727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1418.1818181818182
+              C 825 1418.1818181818182,
+                825 1285.2272727272727,
+                750 1285.2272727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 900 1595.4545454545455
+              C 825 1595.4545454545455,
+                825 1595.4545454545455,
+                750 1595.4545454545455"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 177.27272727272728
+              C 975 177.27272727272728,
+                975 576.1363636363636,
+                900 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 443.1818181818182
+              C 975 443.1818181818182,
+                975 576.1363636363636,
+                900 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 531.8181818181819
+              C 975 531.8181818181819,
+                975 576.1363636363636,
+                900 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 620.4545454545455
+              C 975 620.4545454545455,
+                975 576.1363636363636,
+                900 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 797.7272727272727
+              C 975 797.7272727272727,
+                975 576.1363636363636,
+                900 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 886.3636363636364
+              C 975 886.3636363636364,
+                975 576.1363636363636,
+                900 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 975
+              C 975 975,
+                975 576.1363636363636,
+                900 576.1363636363636"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 1152.2727272727273
+              C 975 1152.2727272727273,
+                975 1152.2727272727273,
+                900 1152.2727272727273"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1050 1329.5454545454545
+              C 975 1329.5454545454545,
+                975 1329.5454545454545,
+                900 1329.5454545454545"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 88.63636363636364
+              C 1125 88.63636363636364,
+                1125 177.27272727272728,
+                1050 177.27272727272728"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 177.27272727272728
+              C 1125 177.27272727272728,
+                1125 177.27272727272728,
+                1050 177.27272727272728"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 265.90909090909093
+              C 1125 265.90909090909093,
+                1125 177.27272727272728,
+                1050 177.27272727272728"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 443.1818181818182
+              C 1125 443.1818181818182,
+                1125 443.1818181818182,
+                1050 443.1818181818182"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 620.4545454545455
+              C 1125 620.4545454545455,
+                1125 620.4545454545455,
+                1050 620.4545454545455"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 797.7272727272727
+              C 1125 797.7272727272727,
+                1125 797.7272727272727,
+                1050 797.7272727272727"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1200 1329.5454545454545
+              C 1125 1329.5454545454545,
+                1125 1329.5454545454545,
+                1050 1329.5454545454545"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1350 88.63636363636364
+              C 1275 88.63636363636364,
+                1275 88.63636363636364,
+                1200 88.63636363636364"></path><path fill="none" stroke="#ccc" stroke-width="3px" d="M 1500 88.63636363636364
+              C 1425 88.63636363636364,
+                1425 88.63636363636364,
+                1350 88.63636363636364"></path><g transform="translate(50,50)"></g><g class="node" transform="translate(0, 1650.852294921875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(215, 215, 215); stroke: rgb(186, 186, 186);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">19A (B)</text></g><g class="node" transform="translate(150, 1606.5340576171875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(198, 198, 198); stroke: rgb(171, 171, 171);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">20A (B.1)</text></g><g class="node" transform="translate(150, 1695.17041015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(137, 137, 137); stroke: rgb(119, 119, 119);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700"></text></g><g class="node" transform="translate(300, 1517.897705078125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(189, 189, 189); stroke: rgb(164, 164, 164);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">20B (B.1.1)</text></g><g class="node" transform="translate(300, 1606.5340576171875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(69, 64, 212); stroke: rgb(60, 56, 183);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">21A (Delta, B.1.617.2)</text></g><g class="node" transform="translate(300, 1695.17041015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(137, 137, 137); stroke: rgb(119, 119, 119);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700"></text></g><g class="node" transform="translate(450, 1429.2613525390625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(135, 198, 127); stroke: rgb(117, 171, 110);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">21M (Omicron, B.1.1.529)</text></g><g class="node" transform="translate(450, 1517.897705078125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(84, 35, 186); stroke: rgb(73, 31, 161);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">20I (Alpha, B.1.1.7)</text></g><g class="node" transform="translate(450, 1606.5340576171875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(137, 137, 137); stroke: rgb(119, 119, 119);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700"></text></g><g class="node" transform="translate(600, 997.1591186523438)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(114, 190, 154); stroke: rgb(99, 165, 133);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">21K (Omicron, BA.1)</text></g><g class="node" transform="translate(600, 1085.79541015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(125, 194, 140); stroke: rgb(108, 169, 121);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">21L (Omicron, BA.2)</text></g><g class="node" transform="translate(600, 1429.2613525390625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(147, 201, 115); stroke: rgb(128, 174, 100);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">22A (BA.4)</text></g><g class="node" transform="translate(600, 1772.727294921875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(159, 203, 104); stroke: rgb(138, 176, 90);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">22B (BA.5)</text></g><g class="node" transform="translate(600, 1861.3636474609375)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(237, 255, 0); stroke: rgb(206, 237, 0);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25I (BA.3.2)</text></g><g class="node" transform="translate(750, 576.1363525390625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(242, 85, 45); stroke: rgb(210, 74, 39);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23I (BA.2.86)</text></g><g class="node" transform="translate(750, 864.2045288085938)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(184, 203, 87); stroke: rgb(159, 176, 75);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">22D (BA.2.75)</text></g><g class="node" transform="translate(750, 1285.227294921875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(208, 200, 75); stroke: rgb(181, 173, 65);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">22F (XBB)</text></g><g class="node" transform="translate(750, 1440.3409423828125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(208, 200, 75); stroke: rgb(181, 173, 65);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">22C (BA.2.12.1)</text></g><g class="node" transform="translate(750, 1595.45458984375)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(172, 204, 96); stroke: rgb(149, 177, 83);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24D (XDV)</text></g><g class="node" transform="translate(750, 1772.727294921875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(197, 203, 81); stroke: rgb(170, 176, 70);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">22E (BQ.1)</text></g><g class="node" transform="translate(900, 576.1363525390625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(238, 64, 41); stroke: rgb(207, 56, 35);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24A (JN.1)</text></g><g class="node" transform="translate(900, 864.2045288085938)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(237, 183, 64); stroke: rgb(206, 158, 56);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23C (CH.1.1)</text></g><g class="node" transform="translate(900, 1152.272705078125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(219, 197, 71); stroke: rgb(190, 170, 61);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23A (XBB.1.5)</text></g><g class="node" transform="translate(900, 1240.9090576171875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(229, 190, 68); stroke: rgb(198, 165, 59);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23B (XBB.1.16)</text></g><g class="node" transform="translate(900, 1329.54541015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(242, 171, 62); stroke: rgb(210, 148, 54);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23D (XBB.1.9)</text></g><g class="node" transform="translate(900, 1418.1817626953125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(247, 160, 59); stroke: rgb(214, 139, 51);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23E (XBB.2.3)</text></g><g class="node" transform="translate(900, 1595.45458984375)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(223, 184, 60); stroke: rgb(194, 159, 52);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25B (NB.1.8.1)</text></g><g class="node" transform="translate(1050, 177.27272033691406)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(235, 43, 38); stroke: rgb(204, 37, 33);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24B (JN.1.11.1)</text></g><g class="node" transform="translate(1050, 443.18182373046875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 59, 52); stroke: rgb(227, 51, 45);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24H (LF.7)</text></g><g class="node" transform="translate(1050, 531.8181762695312)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 72, 67); stroke: rgb(231, 62, 58);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">24I (MV.1)</text></g><g class="node" transform="translate(1050, 620.4545288085938)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 99, 92); stroke: rgb(231, 86, 80);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">25A (LP.8.1)</text></g><g class="node" transform="translate(1050, 797.727294921875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 131, 120); stroke: rgb(237, 114, 104);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">25C (XFG)</text></g><g class="node" transform="translate(1050, 886.3636474609375)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 183, 175); stroke: rgb(237, 158, 152);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25G (XFC)</text></g><g class="node" transform="translate(1050, 975)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 221, 216); stroke: rgb(237, 192, 187);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25H (XFJ)</text></g><g class="node" transform="translate(1050, 1152.272705078125)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(242, 85, 45); stroke: rgb(210, 74, 39);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23G (XBB.1.5.70)</text></g><g class="node" transform="translate(1050, 1329.54541015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(247, 143, 56); stroke: rgb(214, 124, 48);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">23F (EG.5.1)</text></g><g class="node" transform="translate(1200, 88.63636016845703)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(175, 42, 10); stroke: rgb(152, 36, 8);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24C (KP.3)</text></g><g class="node" transform="translate(1200, 177.27272033691406)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(203, 55, 31); stroke: rgb(176, 47, 27);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">24F (XEC)</text></g><g class="node" transform="translate(1200, 265.9090881347656)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(220, 66, 50); stroke: rgb(191, 57, 44);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">24G (KP.2.3)</text></g><g class="node" transform="translate(1200, 443.18182373046875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(241, 93, 79); stroke: rgb(209, 81, 69);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25E (PY.1)</text></g><g class="node" transform="translate(1200, 620.4545288085938)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 132, 119); stroke: rgb(225, 115, 103);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25F (NW.1.2)</text></g><g class="node" transform="translate(1200, 797.727294921875)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(255, 146, 134); stroke: rgb(226, 127, 116);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">26A (XFG.1.1)</text></g><g class="node" transform="translate(1200, 1329.54541015625)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(245, 106, 49); stroke: rgb(212, 92, 43);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">23H (HK.3)</text></g><g class="node" transform="translate(1350, 88.63636016845703)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(162, 39, 21); stroke: rgb(141, 34, 19);"></circle><text dy=".35em" x="-20" text-anchor="end" fill="#777" font-weight="700">24E (KP.3.1.1)</text></g><g class="node" transform="translate(1500, 88.63636016845703)"><circle class="node" r="15" cursor="pointer" style="fill: rgb(83, 10, 12); stroke: rgb(72, 8, 10);"></circle><text dy=".35em" x="20" text-anchor="start" fill="#777" font-weight="700">25D (MC.10.2.1)</text></g></svg>
