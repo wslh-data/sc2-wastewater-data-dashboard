@@ -22,7 +22,7 @@ getData <- function(){
 
 
 basemap <- leaflet(width = "100%",  height = "100%", options = leafletOptions(zoomControl=TRUE, minZoom=7, maxZoom=9)) %>%
-  addProviderTiles(providers$CartoDB.Positron)  %>%
+  addProviderTiles(providers$Esri.WorldGrayCanvas) %>%
   setView(lng=-89.9941,lat=44.6243, zoom=7) %>%
   fitBounds(-92.7, 42.56, -87.7, 46.8) %>%      #fitBounds(min(freyja.map$long), min(freyja.map$lat), max(freyja.map$long), max(freyja.map$lat))
   setMaxBounds(-95.2, 40.06, -84.2, 49.3)    #setMaxBounds(min(freyja.map$long) - 2, min(freyja.map$lat) - 2, max(freyja.map$long) + 2, max(freyja.map$lat) + 2)
@@ -35,7 +35,19 @@ ui <- fluidPage(
   tags$style(type = "text/css", "html, body {width:100%; height: 100%}"),
   absolutePanel(top = 10, right = "10%",
                 selectizeInput("variant", "Select a group of variants:", choices="All variants", multiple = FALSE)
-  )
+  ), 
+
+  
+  tags$style(HTML("
+  /* Make the minicharts legend scrollable */
+  .leaflet-bottom.leaflet-left .leaflet-control,
+  .leaflet-control.legend, .info.legend {
+    max-height: 260px;      /* keep it well under the 600px map height */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+  }
+"))
   
 )
 
@@ -57,7 +69,29 @@ server <- function(input, output, session){
       addMinicharts(
         freyja.map$long, freyja.map$lat,
         layerId = freyja.map$sites,
+        width = 30, height = 30,
+        popup = popupArgs(html = as.character(freyja.map$sites), showValues = FALSE) # Only show site name when click on a site
+      )
+
+    
+    # Add invisible layer to enlarge click target under each dot/site so that can visualize and click on the dot more easily
+    sites <- freyja.map %>% distinct(sites, lat, long)
+    
+    basemap %>%
+      addMinicharts(
+        freyja.map$long, freyja.map$lat,
+        layerId = freyja.map$sites,
         width = 30, height = 30
+      ) %>%
+      addCircleMarkers(
+        data = sites,
+        lng = ~long, lat = ~lat,
+        layerId = ~paste0("hit_", sites),
+        radius = 5,             # hit area in pixels; raise for more forgiveness
+        stroke = FALSE,
+        fillOpacity = 0.01,      # effectively invisible, but still clickable
+        label = ~sites,          # shows on hover
+        popup = ~sites           # shows on click
       )
   })
   
@@ -89,8 +123,7 @@ server <- function(input, output, session){
         initialTime = date.init,
         time = freyja.map$Month,
         transitionTime = 900,
-        type = ifelse(inc_lineages == "All variants", "pie", "polar-radius"),
-        showLabels = input$labels
+        type = ifelse(inc_lineages == "All variants", "pie", "polar-radius")
       )
   })
   
