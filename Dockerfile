@@ -29,17 +29,19 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
   libharfbuzz-dev \
   libfribidi-dev
 
-RUN R -e "install.packages(c(\
+RUN R -e "pkgs <- c(\
 'shiny', \
 'dplyr', \
 'plotly', \
-'forcats', \ 
-'ggplot2', \ 
+'forcats', \
+'ggplot2', \
 'leaflet', \
 'leaflet.minicharts', \
 'viridis', \
-'shinycssloaders' \
-), repos = 'http://cran.us.r-project.org')"
+'shinycssloaders'); \
+install.packages(pkgs, Ncpus = 4); \
+missing <- setdiff(pkgs, rownames(installed.packages())); \
+if (length(missing)) stop('Failed to install: ', paste(missing, collapse = ', '))"
 
 
 RUN rm -r /srv/shiny-server/*
